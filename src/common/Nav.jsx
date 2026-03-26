@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link, index) => (
             <a
               key={index}
@@ -48,13 +48,13 @@ const Navbar = () => {
           ))}
 
           {/* CTA Button */}
-          <button className="bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition">
+          <button className="cursor-pointer bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition">
             Get Quote
           </button>
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {isOpen ? (
             <X
               size={28}
@@ -73,7 +73,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white w-full px-6 transition-all duration-300 overflow-hidden ${
+        className={`lg:hidden bg-white w-full px-6 transition-all duration-300 overflow-hidden ${
           isOpen ? "max-h-[400px] py-4" : "max-h-0"
         }`}
       >
@@ -93,7 +93,7 @@ const Navbar = () => {
             </a>
           ))}
 
-          <button className="bg-red-600 text-white py-2 rounded-full mt-2">
+          <button className="bg-red-600 cursor-pointer text-white py-2 rounded-full mt-2">
             Get Quote
           </button>
         </div>

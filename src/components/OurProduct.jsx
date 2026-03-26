@@ -89,7 +89,7 @@ const OurProduct = () => {
 
                 <button
                     onClick={prev}
-                    className="absolute left-2 sm:left-6 z-10 bg-white p-2 rounded-full shadow hover:scale-105 transition"
+                    className="absolute cursor-pointer left-2 sm:left-6 z-10 bg-white p-2 rounded-full shadow hover:scale-105 transition"
                 >
                     <ChevronLeft size={28} />
                 </button>
@@ -124,7 +124,7 @@ const OurProduct = () => {
                                     </h2>
 
                                     <button className="mb-6 mt-4">
-                                        <div className="bg-[#EB3223] text-white text-sm sm:text-base px-8 py-2 flex items-center gap-3 [clip-path:polygon(12%_0,100%_0,88%_100%,0%_100%)] hover:bg-red-600 transition-all duration-300">
+                                        <div className="bg-[#EB3223] cursor-pointer text-white text-sm sm:text-base px-8 py-2 flex items-center gap-3 [clip-path:polygon(12%_0,100%_0,88%_100%,0%_100%)] hover:bg-red-600 transition-all duration-300">
                                             <span>Know More</span>
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -151,14 +151,14 @@ const OurProduct = () => {
 
                 <button
                     onClick={next}
-                    className="absolute right-2 sm:right-6 z-10 bg-white p-2 rounded-full shadow hover:scale-105 transition"
+                    className="absolute cursor-pointer right-2 sm:right-6 z-10 bg-white p-2 rounded-full shadow hover:scale-105 transition"
                 >
                     <ChevronRight size={28} />
                 </button>
             </div>
 
             <div className="w-full flex justify-center mt-10">
-                <button className="w-[210px] h-[40px] md:mb-10 bg-[#EB3223] text-white rounded-[5px] flex items-center justify-center font-[Poppins] font-medium text-[16px] sm:text-[18px] hover:bg-red-600 transition-all duration-300">
+                <button className="w-[210px] h-[40px] cursor-pointer md:mb-10 bg-[#EB3223] text-white rounded-[5px] flex items-center justify-center font-[Poppins] font-medium text-[16px] sm:text-[18px] hover:bg-red-600 transition-all duration-300">
                     View All Product
                 </button>
             </div>

@@ -214,7 +214,7 @@ export function Testimonials() {
 
       <div className="relative w-full max-w-[1188px] mx-auto flex flex-col xl:flex-row items-center justify-center gap-8 xl:gap-10">
 
-        <button className="absolute -left-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223] hover:scale-105 transition-transform z-20 hidden xl:flex">
+        <button className="absolute cursor-pointer -left-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223] hover:scale-105 transition-transform z-20 hidden xl:flex">
           <ChevronLeft size={28} strokeWidth={2.5} />
         </button>
 
@@ -275,16 +275,16 @@ export function Testimonials() {
         </div>
 
 
-        <button className="absolute -right-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223] hover:scale-105 transition-transform z-20 hidden xl:flex">
+        <button className="absolute cursor-pointer -right-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223] hover:scale-105 transition-transform z-20 hidden xl:flex">
           <ChevronRight size={28} strokeWidth={2.5} />
         </button>
       </div>
 
       <div className="flex xl:hidden gap-6 mt-12">
-        <button className="w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223]">
+        <button className="w-[50px] h-[50px] cursor-pointer bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223]">
           <ChevronLeft size={28} strokeWidth={2.5} />
         </button>
-        <button className="w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223]">
+        <button className="w-[50px] h-[50px] cursor-pointer bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223]">
           <ChevronRight size={28} strokeWidth={2.5} />
         </button>
       </div>

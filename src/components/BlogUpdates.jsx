@@ -92,7 +92,7 @@ export default function BlogUpdates() {
         </div>
 
 
-        <button className="bg-[#EB3223] hover:bg-red-700 transition-colors rounded-[5px] w-[137px] h-[40px] flex items-center justify-center shadow-sm">
+        <button className="cursor-pointer bg-[#EB3223] hover:bg-red-700 transition-colors rounded-[5px] w-[137px] h-[40px] flex items-center justify-center shadow-sm">
           <span className="font-medium text-[16px] xl:text-[18px] text-white">
             View All
           </span>
