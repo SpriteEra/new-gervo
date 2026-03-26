@@ -5,7 +5,7 @@ import prize from '../../public/Images/prize.png';
 const About = () => {
     return (
         <div className="w-full py-10 px-4 overflow-hidden">
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
+            <div className="max-w-7xl grid lg:grid-cols-2 gap-10 items-start">
 
                 {/* LEFT SIDE */}
                 <div className="flex justify-center lg:justify-end order-2 lg:order-1">
@@ -53,7 +53,7 @@ const About = () => {
                 </div>
 
                 {/* RIGHT SIDE CONTENT */}
-                <div className="w-full flex flex-col order-1 lg:order-2 text-left">
+                <div className="w-full flex flex-col lg:pr-10 md:8 order-1 lg:order-2 text-left">
                     <div className="flex items-center gap-2 mb-2">
                         <div className="w-12 border-t-[3px] border-[#FFCC00]"></div>
                         <p className="text-xs sm:text-sm text-gray-500">
