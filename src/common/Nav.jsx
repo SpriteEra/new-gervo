@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Glogo from "../../public/Images/Glogo.png";
 import Revlogo from "../../public/Images/RevLogo.png";
+import {Link} from "react-router";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", active: true },
-    { name: "About" },
-    { name: "Services" },
-    { name: "Products" },
-    { name: "Blogs" },
-    { name: "Contact" },
+    { name: "Home", active: true, to: "/" },
+    { name: "About", to: "/about" },
+    { name: "Services", to: "/services" },
+    { name: "Products", to: "/our-products" },
+    { name: "Blogs", to: "/blogs" },
+    { name: "Contact", to: "/contact" },
   ];
 
   return (
@@ -34,9 +35,9 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link, index) => (
-            <a
+            <Link
               key={index}
-              href="#"
+              to={link.to}
               className={`text-[18px] font-medium transition ${
                 link.active
                   ? "text-red-600 font-semibold"
@@ -44,7 +45,7 @@ const Navbar = () => {
               }`}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
 
           {/* CTA Button */}
