@@ -2,42 +2,35 @@ import facebook from "../assets/Facebook.png";
 import insta from "../assets/Instagram.png";
 import twitt from "../assets/X.png";
 import youtube from "../assets/Youtube.png";
-import glb from "../assets/GREVOFINAL.png";
-import rect from '../assets/rect.png';
-import { FaXTwitter } from "react-icons/fa6";
 export default function Footer2() {
     return (
         <>
             <div className='bg-black text-white px-0 sm:px-40 py-5'>
                 <div className="flex flex-wrap w-full gap-5 justify-center sm:justify-between">
                     {/* Logo + Description */}
-                    <div className="flex flex-col min-w-[200px] sm:min-w-[250px] md:min-w-[300px] max-w-xs sm:max-w-xl sm:text-left">
+                    <div className="flex flex-col min-w-[200px] sm:min-w-[250px] md:min-w-[300px] max-w-[400px]  sm:text-left">
                         {/* Mobile logo */}
-                        <div className="flex items-center gap-2 mb-4 items-center justify-center sm:hidden">
+                        <div className="flex items-center gap-2 mb-4 justify-center sm:hidden">
                             <div className="flex items-center text-center gap-2">
                                 <img
                                     alt="G Logo"
-                                    src="/public/Images/Glogo.png"
-                                    className="h-16 md:h-16 object-contain items-center filter brightness-0 invert"
+                                    src="/logo.png"
+                                    className="h-16 md:h-16 object-contain items-center "
                                 />
-                                <img
-                                    alt="Rev Logo"
-                                    src="/public/Images/RevLogo.png"
-                                    className="h-8 md:h-8 object-contain items-center filter  brightness-0 invert"
-                                />
+
                             </div>
                         </div>
 
                         {/**/}
-                        <div className="hidden sm:flex items-center mb-4 justify-center sm:justify-start">
+                        <div className="hidden sm:flex items-center mb-4 justify-center ">
                             <img
-                                src={glb}
+                                src="/logo.png"
                                 alt="Grevo Logo"
-                                className="w-24 sm:w-28 md:w-32 object-contain filter brightness-0 invert"
+                                className="w-24 sm:w-28 md:w-32 xl:w-50 object-contain filter brightness-0 invert"
                             />
                         </div>
                         {/**/}
-                        <p className="text-sm sm:text-base leading-relaxed text-center sm:text-left max-w-[250px] sm:max-w-md">
+                        <p className="text-sm sm:text-base w-full leading-relaxed text-center sm:text-left ">
                             Engineering advanced shredder and recycling machines designed for
                             biomass, e-waste, and municipal solid waste processing.
                         </p>
@@ -68,9 +61,9 @@ export default function Footer2() {
                     </div>
 
                     {/* Contact */}
-                    <div className="w-full sm:w-auto flex justify-center sm:justify-start">
-                        <div className="min-w-[150px] sm:items-center text-center">
-                            <h1 className="text-sm sm:text-base sm:text-center font-normal hover:text-slate-250">Contact</h1>
+                    <div className="w-full sm:w-auto flex justify-center sm:justify-start sm:items-start">
+                        <div className="min-w-[150px] text-center sm:text-left ">
+                            <h1 className="text-sm sm:text-base  font-normal  hover:text-slate-250">Contact</h1>
                             <ul className="mt-2 space-y-1 text-center sm:text-left">
                                 <li className="text-slate-300 hover:text-slate-250 text-xs sm:text-sm font-medium hover:underline">123, Green Avenue,</li>
                                 <li className="text-slate-300 hover:text-slate-250 text-xs sm:text-sm font-medium hover:underline">Near City Center,</li>

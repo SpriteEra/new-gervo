@@ -1,5 +1,5 @@
 import React from "react";
-import maskImg from "../../public/Images/Maskgroup.png"
+import maskImg from "/Images/Maskgroup.png"
 const stats = [
   { value: "1500+", label: "Machine Installed" },
   { value: "1200+", label: "Happy Client" },
@@ -10,7 +10,7 @@ const stats = [
 const StatsSection = () => {
   return (
     <section className="relative w-full overflow-hidden">
-      
+
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#0A121A] via-[#325A8E] to-[#0A121A]" />
 
@@ -42,7 +42,7 @@ const StatsSection = () => {
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 py-12 sm:py-16">
-        
+
         {/* Responsive Grid */}
         <div
           className="

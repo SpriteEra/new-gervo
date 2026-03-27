@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Glogo from "../../public/Images/Glogo.png";
-import Revlogo from "../../public/Images/RevLogo.png";
+import Glogo from "/Images/Glogo.png";
+import Revlogo from "/Images/RevLogo.png";
 import { NavLink } from "react-router";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

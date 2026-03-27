@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import img5 from "../../public/Images/img5.png";
-import img6 from "../../public/Images/img6.png";
-import img7 from "../../public/Images/img7.png";
+import img5 from "/Images/img5.png";
+import img6 from "/Images/img6.png";
+import img7 from "/Images/img7.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const cards = [
@@ -32,7 +32,7 @@ const OurServices = () => {
 
   return (
     <div className="relative w-full py-12 sm:py-16 overflow-hidden bg-[rgba(235,50,35,0.1)]">
-      
+
       {/* GRID BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[rgba(235,50,35,0.04)]" />
@@ -96,11 +96,10 @@ const OurServices = () => {
             {cards.map((_, i) => (
               <div
                 key={i}
-                className={`h-[5px] rounded-full transition-all duration-300 ${
-                  i === current
+                className={`h-[5px] rounded-full transition-all duration-300 ${i === current
                     ? "w-6 bg-red-500"
                     : "w-2 bg-gray-400"
-                }`}
+                  }`}
               />
             ))}
           </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import AboutTop from "../../public/Images/AboutTop.png"; // update path if needed
+import AboutTop from "/Images/AboutTop.png"; // update path if needed
 
 const AboutHero = () => {
   return (
@@ -17,7 +17,7 @@ const AboutHero = () => {
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-        
+
         {/* Heading */}
         <h1 className="text-white font-semibold font-[Poppins] 
           text-2xl sm:text-3xl md:text-4xl lg:text-[35px]">

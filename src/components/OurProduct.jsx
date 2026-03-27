@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import img3 from "../../public/Images/img3.png";
-import img4 from "../../public/Images/img4.png";
+import img3 from "/Images/img3.png";
+import img4 from "/Images/img4.png";
 
 const OurProduct = () => {
     const products = [
