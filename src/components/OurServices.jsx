@@ -79,14 +79,14 @@ const OurServices = () => {
           {/* ARROWS */}
           <button
             onClick={prevSlide}
-            className="absolute left-[-10px] top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
+            className="absolute cursor-pointer left-[-10px] top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
           >
             <ChevronLeft size={18} className="text-red-500" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-[-10px] top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
+            className="absolute right-[-10px] cursor-pointer top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
           >
             <ChevronRight size={18} className="text-red-500" />
           </button>
