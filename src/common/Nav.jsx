@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Glogo from "../../public/Images/Glogo.png";
 import Revlogo from "../../public/Images/RevLogo.png";
-import {Link} from "react-router";
+import { NavLink } from "react-router";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  // const [active,setActive] = useState("Home");
   const navLinks = [
-    { name: "Home", active: true, to: "/" },
+    { name: "Home", to: "/" },
     { name: "About", to: "/about" },
     { name: "Services", to: "/services" },
     { name: "Products", to: "/our-products" },
@@ -35,17 +35,18 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link, index) => (
-            <Link
+            <NavLink
               key={index}
               to={link.to}
-              className={`text-[18px] font-medium transition ${
-                link.active
+              className={({ isActive }) =>
+                `text-[18px] font-medium transition ${isActive
                   ? "text-red-600 font-semibold"
                   : "text-black hover:text-red-500"
-              }`}
+                }`
+              }
             >
               {link.name}
-            </Link>
+            </NavLink>
           ))}
 
           {/* CTA Button */}
@@ -74,24 +75,24 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden bg-white w-full px-6 transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-[400px] py-4" : "max-h-0"
-        }`}
+        className={`lg:hidden bg-white w-full px-6 transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[400px] py-4" : "max-h-0"
+          }`}
       >
         <div className="flex flex-col gap-4">
           {navLinks.map((link, index) => (
-            <a
+            <NavLink
               key={index}
-              href="#"
-              className={`text-[16px] ${
-                link.active
-                  ? "text-red-600 font-semibold"
-                  : "text-black"
-              }`}
+              to={link.to}
               onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `text-[16px] font-medium transition ${isActive
+                  ? "text-red-600 font-semibold"
+                  : "text-black hover:text-red-500"
+                }`
+              }
             >
               {link.name}
-            </a>
+            </NavLink>
           ))}
 
           <button className="bg-red-600 cursor-pointer text-white py-2 rounded-full mt-2">

@@ -6,7 +6,7 @@ const Whoweare = () => {
         <section className="w-full flex justify-center items-center flex-col px-4 md:px-10 lg:px-20 py-16">
 
             {/* Top Heading */}
-            <div className="text-center mb-10 max-w-[80%]">
+            <div className="text-center mb-10 md:max-w-[80%]">
 
                 {/* Who We Are */}
                 <div className="flex items-center justify-center gap-1 mb-2">
@@ -24,10 +24,10 @@ const Whoweare = () => {
             </div>
 
             {/* Content Section */}
-            <div className="grid max-w-[90%] lg:grid-cols-2 gap-10 items-center">
+            <div className="grid md:max-w-[90%] lg:grid-cols-2 gap-8 items-center">
 
                 {/* Left Text */}
-                <div className=" text-sm md:text-base lg:text-lg leading-relaxed">
+                <div className="order-2 lg:order-1 text-xs md:text-sm lg:text-base leading-relaxed">
 
                     <p>
                         <span className="text-green-600 font-semibold">
@@ -53,7 +53,7 @@ const Whoweare = () => {
                 </div>
 
                 {/* Right Image */}
-                <div className="flex justify-center lg:justify-end">
+                <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
                     <img
                         src={whoweare}
                         alt="German R&D Team"
@@ -63,30 +63,41 @@ const Whoweare = () => {
 
             </div>
 
-            {/* Container */}
-            <div className="w-full mt-24 max-w-[80%] bg-[#E6F7EA] rounded-[10px_100px] px-6 md:px-12 py-9 text-center">
+            <div className="flex justify-center">
+                <div className="relative w-full mt-24 md:max-w-[80%]">
 
-                {/* Heading */}
-                <h2 className="text-xl md:text-2xl font-bold text-black">
-                    Mission & Vision
-                </h2>
+                    {/* Top-right curved glow */}
+                    <div className="absolute -top-0 -right-0 w-40 h-40 bg-green-500 rounded-full pointer-events-none"></div>
 
-                {/* Green Line */}
-                <div className="w-24 md:w-36 h-1 bg-green-600 mx-auto mt-1 mb-4"></div>
+                    {/* Bottom-left curved glow */}
+                    <div className="absolute -bottom-0 -left-0 w-40 h-40 bg-green-500 rounded-full pointer-events-none"></div>
 
-                {/* Content */}
-                <p className="text-sm lg:px-20 md:text-base lg:text-lg text-black leading-relaxed">
-                    To deliver world-class recycling and shredding solutions that promote
-                    environmental sustainability, optimize resource recovery, and improve
-                    industrial efficiency through innovation and advanced engineering.
-                </p>
+                    {/* Main Container */}
+                    <div className="relative bg-[#E6F7EA] rounded-[10px_100px] px-6 md:px-12 py-9 text-center">
 
-                <p className="mt-0 lg:px-20 text-sm md:text-base lg:text-lg text-black leading-relaxed">
-                    To become a global leader in sustainable waste processing and biomass
-                    energy solutions by continuously advancing technology and empowering
-                    industries with reliable and eco-friendly systems.
-                </p>
+                        {/* Heading */}
+                        <h2 className="text-xl md:text-2xl font-bold text-black">
+                            Mission & Vision
+                        </h2>
 
+                        {/* Green Line */}
+                        <div className="w-24 md:w-36 h-1 bg-green-600 mx-auto mt-1 mb-4"></div>
+
+                        {/* Content */}
+                        <p className="text-xs lg:px-18 md:text-sm lg:text-base text-black leading-relaxed">
+                            To deliver world-class recycling and shredding solutions that promote
+                            environmental sustainability, optimize resource recovery, and improve
+                            industrial efficiency through innovation and advanced engineering.
+                        </p>
+
+                        <p className="mt-2 lg:px-20 text-xs md:text-sm lg:text-base text-black leading-relaxed">
+                            To become a global leader in sustainable waste processing and biomass
+                            energy solutions by continuously advancing technology and empowering
+                            industries with reliable and eco-friendly systems.
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </section>
     );
