@@ -7,6 +7,7 @@ import Navbar from './common/Nav';
 import Services from './pages/Services';
 import OurProducts from './pages/OurProducts';
 import Footer2 from './pages/Footer.jsx';
+import Feedback12 from './components/Feedback12.jsx';
 const App = () => {
   return (
     <Router>
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer2/>
+      <Feedback12/>
     </Router>
   
   );
