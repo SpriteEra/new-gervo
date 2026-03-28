@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { Star } from "lucide-react";
-import img8 from "../../public/Images/img8.png";
-import img9 from "../../public/Images/img9.png";
-import img10 from "../../public/Images/img10.png";
-import img11 from "../../public/Images/img11.png";
-import img12 from "../../public/Images/img12.png";
+import img8 from "/Images/img8.png";
+import img9 from "/Images/img9.png";
+import img10 from "/Images/img10.png";
+import img11 from "/Images/img11.png";
+import img12 from "/Images/img12.png";
 
 const logos = [img8, img9, img10, img11, img12];
 
@@ -36,7 +36,7 @@ export default function OurClients() {
 
             {/* Heading */}
             <div className="flex items-center justify-center gap-4">
-                
+
                 {/* Left Stars */}
                 <div className="flex items-center gap-1">
                     <Star className="text-white w-5 h-5 stroke-[1.5] fill-none" />
@@ -63,9 +63,8 @@ export default function OurClients() {
                         key={i}
                         src={logo}
                         alt="client"
-                        className={`h-16 object-contain ${
-                            i % 5 === 3 ? "rounded-xl" : "rounded-full"
-                        } ${i % 5 === 4 ? "invert rounded-none" : ""}`}
+                        className={`h-16 object-contain ${i % 5 === 3 ? "rounded-xl" : "rounded-full"
+                            } ${i % 5 === 4 ? "invert rounded-none" : ""}`}
                     />
                 ))}
             </div>
@@ -83,9 +82,8 @@ export default function OurClients() {
                         <img
                             src={logo}
                             alt="client"
-                            className={`h-16 object-contain ${
-                                i % 5 === 3 ? "rounded-xl" : "rounded-full"
-                            } ${i % 5 === 4 ? "invert rounded-none" : ""}`}
+                            className={`h-16 object-contain ${i % 5 === 3 ? "rounded-xl" : "rounded-full"
+                                } ${i % 5 === 4 ? "invert rounded-none" : ""}`}
                         />
                     </div>
                 ))}

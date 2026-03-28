@@ -108,9 +108,10 @@ export function Testimonials() {
         Real feedback from customers who trusted us with their spaces.
       </p>
 
-      <div className="relative w-full flex items-center justify-center">
-        {/* Desktop Left Arrow */}
-        <button onClick={prevSlide} className="absolute left-0 2xl:left-10 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-lg flex items-center justify-center text-[#EB3223] z-30 hidden xl:flex">
+
+      <div className="relative w-full max-w-[1188px] mx-auto flex flex-col xl:flex-row items-center justify-center gap-8 xl:gap-10">
+
+        <button className="absolute cursor-pointer -left-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223] hover:scale-105 transition-transform z-20 hidden xl:flex">
           <ChevronLeft size={28} strokeWidth={2.5} />
         </button>
 
@@ -161,11 +162,21 @@ export function Testimonials() {
           })}
         </div>
 
-        {/* Desktop Right Arrow */}
-        <button onClick={nextSlide} className="absolute right-0 2xl:right-10 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-lg flex items-center justify-center text-[#EB3223] z-30 hidden xl:flex">
+
+        <button className="absolute cursor-pointer -right-4 top-1/2 -translate-y-1/2 w-[50px] h-[50px] bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223] hover:scale-105 transition-transform z-20 hidden xl:flex">
           <ChevronRight size={28} strokeWidth={2.5} />
         </button>
       </div>
+
+      <div className="flex xl:hidden gap-6 mt-12">
+        <button className="w-[50px] h-[50px] cursor-pointer bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223]">
+          <ChevronLeft size={28} strokeWidth={2.5} />
+        </button>
+        <button className="w-[50px] h-[50px] cursor-pointer bg-white rounded-full shadow-[0px_0px_8px_rgba(0,0,0,0.15)] flex items-center justify-center text-[#EB3223]">
+          <ChevronRight size={28} strokeWidth={2.5} />
+        </button>
+      </div>
+
     </section>
   );
 }

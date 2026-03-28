@@ -6,8 +6,7 @@ import Contact from './pages/Contact';
 import Navbar from './common/Nav';
 import Services from './pages/Services';
 import OurProducts from './pages/OurProducts';
-
-
+import Footer2 from './pages/Footer.jsx';
 const App = () => {
   return (
     <Router>
@@ -20,7 +19,9 @@ const App = () => {
         <Route path='/blogs' element={<Blogs />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      <Footer2/>
     </Router>
+  
   );
 }
 

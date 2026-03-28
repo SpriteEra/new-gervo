@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import img5 from "../../public/Images/img5.png";
-import img6 from "../../public/Images/img6.png";
-import img7 from "../../public/Images/img7.png";
+import img5 from "/Images/img5.png";
+import img6 from "/Images/img6.png";
+import img7 from "/Images/img7.png";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const cards = [
@@ -32,7 +32,7 @@ const OurServices = () => {
 
   return (
     <div className="relative w-full py-12 sm:py-16 overflow-hidden bg-[rgba(235,50,35,0.1)]">
-      
+
       {/* GRID BACKGROUND */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[rgba(235,50,35,0.04)]" />
@@ -79,14 +79,14 @@ const OurServices = () => {
           {/* ARROWS */}
           <button
             onClick={prevSlide}
-            className="absolute left-[-10px] top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
+            className="absolute cursor-pointer left-[-10px] top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
           >
             <ChevronLeft size={18} className="text-red-500" />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-[-10px] top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
+            className="absolute right-[-10px] cursor-pointer top-1/2 -translate-y-1/2 bg-white w-8 h-8 rounded-full shadow flex items-center justify-center"
           >
             <ChevronRight size={18} className="text-red-500" />
           </button>
@@ -96,11 +96,10 @@ const OurServices = () => {
             {cards.map((_, i) => (
               <div
                 key={i}
-                className={`h-[5px] rounded-full transition-all duration-300 ${
-                  i === current
+                className={`h-[5px] rounded-full transition-all duration-300 ${i === current
                     ? "w-6 bg-red-500"
                     : "w-2 bg-gray-400"
-                }`}
+                  }`}
               />
             ))}
           </div>

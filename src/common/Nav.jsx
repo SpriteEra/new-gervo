@@ -109,9 +109,12 @@ import { Link } from "react-router-dom";
 import Glogo from "../../public/Images/Glogo.png";
 import Revlogo from "../../public/Images/RevLogo.png";
 
+import Glogo from "/Images/Glogo.png";
+import Revlogo from "/Images/RevLogo.png";
+import { NavLink } from "react-router";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  // const [active,setActive] = useState("Home");
   const navLinks = [
     { name: "Home", path: "/", active: true },
     { name: "About", path: "/about" },
@@ -119,6 +122,12 @@ const Navbar = () => {
     { name: "Products", path: "/our-products" },
     { name: "Blogs", path: "/blogs" },
     { name: "Contact", path: "/contact" },
+    { name: "Home", to: "/" },
+    { name: "About", to: "/about" },
+    { name: "Services", to: "/services" },
+    { name: "Products", to: "/our-products" },
+    { name: "Blogs", to: "/blogs" },
+    { name: "Contact", to: "/contact" },
   ];
 
   return (
@@ -140,29 +149,36 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link, index) => (
             <Link
               key={index}
               to={link.path}
               className={`text-[18px] font-medium transition ${
                 link.active
+            <NavLink
+              key={index}
+              to={link.to}
+              className={({ isActive }) =>
+                `text-[18px] font-medium transition ${isActive
                   ? "text-red-600 font-semibold"
                   : "text-black hover:text-red-500"
-              }`}
+                }`
+              }
             >
               {link.name}
             </Link>
+            </NavLink>
           ))}
 
           {/* CTA Button */}
-          <button className="bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition">
+          <button className="cursor-pointer bg-red-600 text-white px-5 py-2 rounded-full hover:bg-red-700 transition">
             Get Quote
           </button>
         </div>
 
         {/* Mobile Menu Icon */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {isOpen ? (
             <X
               size={28}
@@ -181,9 +197,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white w-full px-6 transition-all duration-300 overflow-hidden ${
-          isOpen ? "max-h-[400px] py-4" : "max-h-0"
-        }`}
+        className={`lg:hidden bg-white w-full px-6 transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[400px] py-4" : "max-h-0"
+          }`}
       >
         <div className="flex flex-col gap-4">
           {navLinks.map((link, index) => (
@@ -195,13 +210,23 @@ const Navbar = () => {
                   ? "text-red-600 font-semibold"
                   : "text-black"
               }`}
+            <NavLink
+              key={index}
+              to={link.to}
               onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `text-[16px] font-medium transition ${isActive
+                  ? "text-red-600 font-semibold"
+                  : "text-black hover:text-red-500"
+                }`
+              }
             >
               {link.name}
             </Link>
+            </NavLink>
           ))}
 
-          <button className="bg-red-600 text-white py-2 rounded-full mt-2">
+          <button className="bg-red-600 cursor-pointer text-white py-2 rounded-full mt-2">
             Get Quote
           </button>
         </div>

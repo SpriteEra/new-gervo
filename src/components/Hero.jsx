@@ -1,6 +1,6 @@
 import React from "react";
-import HeroImg from "../../public/Images/HeroImg.jpg";
-import Left from "../../public/Images/Left.png";
+import HeroImg from "/Images/HeroImg.jpg";
+import Left from "/Images/Left.png";
 const Hero = () => {
     return (
         <div className="w-full">

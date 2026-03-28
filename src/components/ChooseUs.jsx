@@ -81,7 +81,7 @@ const ChooseUs = () => {
 
                 <button
                     onClick={prev}
-                    className="p-2 bg-gray-100 rounded-full shrink-0"
+                    className="p-2 cursor-pointer bg-gray-100 rounded-full shrink-0"
                 >
                     <ChevronLeft size={20} />
                 </button>
@@ -133,7 +133,7 @@ const ChooseUs = () => {
 
                 <button
                     onClick={next}
-                    className="p-2 bg-gray-100 rounded-full shrink-0"
+                    className="p-2 cursor-pointer bg-gray-100 rounded-full shrink-0"
                 >
                     <ChevronRight size={20} />
                 </button>
