@@ -5,7 +5,7 @@ export default function FooterPage() {
   return (
     <div>
       {/* Display Footer1 first */}
-      <Footer1 />
+      {/* <Footer1 /> */}
 
       {/* Then Footer2 */}
       <Footer2 />

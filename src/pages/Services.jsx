@@ -1,5 +1,9 @@
 import React from 'react';
 import { Check, Factory, Triangle, Wrench, Settings, Building2, Box, Cog } from 'lucide-react';
+import AboutHero from '../components/AboutTop';
+import StatsSection from '../common/StatsSection';
+import TextDesign from '../components/TextDesign';
+import Footer1 from '../components/Footer1';
 
 const Services = () => {
   const ourServicesData = [
@@ -25,30 +29,23 @@ const Services = () => {
       </style>
 
       <section id="services" className="w-full overflow-hidden" style={{ fontFamily: "'Poppins', sans-serif" }}>
-        
-        <div className="bg-[#24813F] w-full py-[83px] px-4 flex flex-col items-center justify-center text-center">
-          <h2 className="text-[#FFFFFF] text-[35px] font-[600] leading-[52px] mb-[4px]">
-            Our Services
-          </h2>
-          <p className="text-[#FFFFFF] max-w-[898px] text-[18px] font-[300] leading-[27px]">
-            Delivering advanced shredder and recycling machinery designed for performance, durability, and environmental responsibility.
-          </p>
-        </div>
+
+        <AboutHero text1="Our Services" text2="Delivering advanced shredder and recycling machinery designed for performance, durability, and environmental responsibility." />
 
         <div className="w-full bg-[#FFFFFF] pt-[140px] pb-[100px] px-5">
           <div className="max-w-[1188px] mx-auto">
-            
+
             <div className="text-center mb-[57px]">
               <div className="flex items-center justify-center gap-[7px] mb-[15px]">
                 <div className="h-0 w-[58px] border-[2px] border-[#EB3223]"></div>
                 <span className="text-[#EB3223] font-[600] text-[18px] leading-[27px]">Our Services</span>
                 <div className="h-0 w-[58px] border-[2px] border-[#EB3223]"></div>
               </div>
-              
+
               <h3 className="text-[40px] leading-[60px] font-[600] text-[#000000] mb-[10px]">
                 Advanced Engineering & Plant Solutions
               </h3>
-              
+
               <p className="text-[#4E5E6A] max-w-[1003px] mx-auto text-[15px] leading-[22px] font-[400]">
                 Delivering reliable industrial machinery, waste processing systems, and integrated biomass plant solutions for sustainable operations.
               </p>
@@ -73,18 +70,18 @@ const Services = () => {
 
         <div className="w-full bg-[#FFFFFF] pt-[50px] pb-[120px] px-5">
           <div className="max-w-[1150px] mx-auto">
-            
+
             <div className="text-center mb-[70px]">
               <div className="flex items-center justify-center gap-[7px] mb-[15px]">
                 <div className="h-0 w-[58px] border-[2px] border-[#EB3223]"></div>
                 <span className="text-[#EB3223] font-[600] text-[18px] leading-[27px]">What We Offer</span>
                 <div className="h-0 w-[58px] border-[2px] border-[#EB3223]"></div>
               </div>
-              
+
               <h3 className="text-[40px] leading-[60px] font-[600] text-[#000000] mb-[10px]">
                 Delivering Complete Plant Lifecycle Solutions
               </h3>
-              
+
               <p className="text-[#4E5E6A] max-w-[1048px] mx-auto text-[15px] leading-[22px] font-[400]">
                 Delivering advanced engineering services, integrated plant solutions, and reliable industrial support for efficient and sustainable operations.
               </p>
@@ -145,38 +142,11 @@ const Services = () => {
             </div>
           </div>
         </div>
-
-        <div className="w-full py-[80px]" style={{ background: "linear-gradient(90deg, #0A121A 0%, #26456C 25%, #325A8E 50%, #26456C 75%, #0A121A 100%)" }}>
-          <div className="max-w-[972px] mx-auto px-6">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-[50px] md:gap-[145px]">
-              
-              <div className="flex flex-col items-center gap-[4px]">
-                <h3 className="text-[#FFFFFF] text-[50px] font-[500] leading-[75px]">1500+</h3>
-                <p className="text-[#238EEB] text-[18px] font-[500] leading-[27px]">Machine Installed</p>
-              </div>
-              
-              <div className="flex flex-col items-center gap-[4px]">
-                <h3 className="text-[#FFFFFF] text-[50px] font-[500] leading-[75px]">1200+</h3>
-                <p className="text-[#238EEB] text-[18px] font-[500] leading-[27px]">Happy Client</p>
-              </div>
-              
-              <div className="flex flex-col items-center gap-[4px]">
-                <h3 className="text-[#FFFFFF] text-[50px] font-[500] leading-[75px]">98%</h3>
-                <p className="text-[#238EEB] text-[18px] font-[500] leading-[27px]">Satisfaction</p>
-              </div>
-              
-              <div className="flex flex-col items-center gap-[4px]">
-                <h3 className="text-[#FFFFFF] text-[50px] font-[500] leading-[75px]">24/7</h3>
-                <p className="text-[#238EEB] text-[18px] font-[500] leading-[27px]">Support</p>
-              </div>
-              
-            </div>
-          </div>
-        </div>
+        <StatsSection />
 
         <div className="w-full bg-[#FFFFFF] py-[120px] px-6 md:px-10">
           <div className="max-w-[1300px] mx-auto flex flex-col md:flex-row items-center justify-center gap-[80px]">
-            
+
             <div className="w-full md:w-[602px] flex flex-col">
               <div className="flex items-center gap-[10px] mb-[15px]">
                 <div className="h-0 w-[56px] border-[1.5px] border-[#FFCC00]"></div>
@@ -184,11 +154,11 @@ const Services = () => {
                   Industrial Innovation
                 </span>
               </div>
-              
+
               <h2 className="text-[50px] leading-[60px] font-[700] text-[#EB3223] mb-[20px] max-w-[549px]">
                 Built on Quality. Driven by Innovation.
               </h2>
-              
+
               <p className="text-[#000000] text-[17px] leading-[26px] font-[400]">
                 At Grevo Global, quality is the foundation of everything we build and innovation drives the way we engineer solutions. Our team combines advanced technology, precision manufacturing, and industry expertise to develop reliable machinery and integrated plant systems that deliver long-term performance and sustainable results for modern industries.
               </p>
@@ -206,6 +176,8 @@ const Services = () => {
         </div>
 
       </section>
+      <Footer1 />
+      <TextDesign />
     </>
   );
 };
