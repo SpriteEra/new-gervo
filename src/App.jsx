@@ -7,6 +7,7 @@ import Navbar from './common/Nav';
 import Services from './pages/Services';
 import OurProducts from './pages/OurProducts';
 import Footer2 from './pages/Footer.jsx';
+import BlogDetail from './pages/BlogDeail';
 const App = () => {
   return (
     <Router>
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/services' element={<Services />} />
         <Route path='/our-products' element={<OurProducts />} />
         <Route path='/blogs' element={<Blogs />} />
+        <Route path='/blogs/:id' element={<BlogDetail />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer2/>
