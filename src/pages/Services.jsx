@@ -90,10 +90,10 @@ const Services = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-[35px] mb-[35px]">
               {whatWeOfferData.slice(0, 6).map((item, index) => (
                 <div key={index} className="bg-[#FFFFFF] rounded-[5px] shadow-[0px_0px_10px_rgba(0,0,0,0.25)] flex flex-col items-center p-[35px_27px] relative">
-                  <div className="bg-[#00AD28] text-[#FFFFFF] rounded-[75px] w-[75px] h-[75px] flex items-center justify-center absolute top-[-37px]">
+                  <div className="bg-[#00AD28] text-[#FFFFFF] rounded-[75px] w-[75px] h-[75px] flex items-center justify-center">
                     <item.icon size={37} strokeWidth={2} />
                   </div>
-                  <h4 className="text-[20px] font-[600] text-[#000000] leading-[30px] text-center mt-[35px] mb-[1px]">
+                  <h4 className="text-[20px] font-[600] text-[#000000] leading-[30px] text-center mt-[20px] mb-[1px]">
                     {item.title}
                   </h4>
                   <p className="text-[#666E81] text-[15px] leading-[22px] text-center font-[400] mb-[19px]">
@@ -117,10 +117,10 @@ const Services = () => {
               <div className="hidden md:block col-span-1"></div>
               {whatWeOfferData.slice(6, 7).map((item, index) => (
                 <div key={index} className="col-span-1 bg-[#FFFFFF] rounded-[5px] shadow-[0px_0px_10px_rgba(0,0,0,0.25)] flex flex-col items-center p-[35px_27px] relative">
-                  <div className="bg-[#00AD28] text-[#FFFFFF] rounded-[75px] w-[75px] h-[75px] flex items-center justify-center absolute top-[-37px]">
+                  <div className="bg-[#00AD28] text-[#FFFFFF] rounded-[75px] w-[75px] h-[75px] flex items-center justify-center">
                     <item.icon size={37} strokeWidth={2} />
                   </div>
-                  <h4 className="text-[20px] font-[600] text-[#000000] leading-[30px] text-center mt-[35px] mb-[1px]">
+                  <h4 className="text-[20px] font-[600] text-[#000000] leading-[30px] text-center mt-[20px] mb-[1px]">
                     {item.title}
                   </h4>
                   <p className="text-[#666E81] text-[15px] leading-[22px] text-center font-[400] mb-[19px]">
